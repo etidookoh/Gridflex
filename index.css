@@ -1,0 +1,123 @@
+*{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+body{
+    background-color: #1a1a1a;
+    color: #f0f0f0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.navbar{
+    background-color: #2c3e50;
+    color: #ffff;
+    padding: 20px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
+.logo a{
+    font-size: 2em;
+    font-weight: bold;
+    color: #fddf04;
+    text-decoration: none;
+}
+.nav-links ul{
+    display: flex;
+    list-style: none;
+}
+.nav-links ul li{
+    margin-left: 20px;
+}
+.nav-links ul li a{
+    text-decoration: none;
+    font-size: 1em;
+    color: #ffff;
+}
+.nav-links ul li a:hover{
+    color:  #ffd700;
+}
+.hero-sec{
+    position: relative;
+    background-image: url(./images/Office.webp);
+    background-position: center;
+    background-size: cover;
+    height: 85vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+}
+.hero-sec::before{
+    content: "";
+    position: absolute;
+    left: 8;
+    width: 50%;
+    height: 60%;
+    background-color: rgba(0, 0, 0, 0.7);
+    z-index: 1;
+    border-radius: 8px;
+}
+.hero-cont{
+    z-index: 2;
+    position: relative;
+    max-width: 800px;
+}
+.hero-cont h1{
+    font-size: 2.2em;
+    margin-bottom: 30px;
+}
+.hero-cont p{
+    font-size: 1.em;
+    margin-bottom: 45px;
+}
+/* .hero-btn{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+} */
+ .btn{
+    display: inline;
+    padding: 12px 28px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1em;
+    cursor: pointer;
+    border: none;
+    transition: 0.3s ease;
+    background-color: #dfcf52;
+    color: #fff;
+}
+.card-sec{
+    padding: 50px 20px;
+    text-align: center;
+    background-color: #1f1e2e;
+}
+.card-cont{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.card{
+    padding: 30px;
+    background-color: ;
+    border-radius: 8px;
+    /* box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); */
+    flex: 1;
+    min-width: 200px;
+    max-width: 280px;
+    border: 2px #736a27;
+    transition: transform 0.3s;
+    box-shadow: inset 0 0 10px #fcdd00;
+}
+.card:hover{
+    transform: translateY(-5px);
+}
